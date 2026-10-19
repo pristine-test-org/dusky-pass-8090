@@ -1,21 +1,18 @@
 # Dusky Pass: Monorepo · Netlify
 
-> **This is a template, not a repository.** Copy it out and prepare it before an eval (steps below).
-> Nothing here is deployed.
-
 A monorepo with three apps on **Netlify**, with preview links **public**. Static Vite +
 TypeScript, no framework. The page reads a live list from the shared Supabase test project.
 Row in the support matrix: impeccable-reviews#302.
 
 ## Deployment links
 
-Filled in at prep time.
+Netlify sites in the team Abdul Wahab Siz, one per app, each with base `apps/<app>`. Deploy previews for pull requests are on, and the team login is off.
 
 | App | Folder | Production | Preview gate |
 |---|---|---|---|
-| Larch | `apps/larch-xm5` | _not deployed_ | no |
-| Teak | `apps/teak-s0m` | _not deployed_ | no |
-| Myrtle | `apps/myrtle-ul5` | _not deployed_ | no |
+| Larch | `apps/larch-xm5` | https://dusky-pass-8090-larch-xm5.netlify.app | no |
+| Teak | `apps/teak-s0m` | https://dusky-pass-8090-teak-s0m.netlify.app | no |
+| Myrtle | `apps/myrtle-ul5` | https://dusky-pass-8090-myrtle-ul5.netlify.app | no |
 
 ## Names
 
