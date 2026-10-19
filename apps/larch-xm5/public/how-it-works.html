@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>How Larch works</title>
+    <style>
+      :root { font-family: system-ui, sans-serif; color: #1c1c1c; background: #fafaf7; }
+      body { margin: 0; --accent: #2f7d4f; }
+      header, section, footer { max-width: 44rem; margin: 0 auto; padding: 1.25rem 1rem; }
+      header { display: flex; justify-content: space-between; align-items: center; }
+      .mark { font-weight: 700; color: var(--accent); }
+      /* Intentional, for Impeccable's test drive: link text under the 11px floor. */
+      header a { color: var(--accent); font-size: 10px; }
+      /* Intentional, for Impeccable's test drive: gradient text on the heading. */
+      h1 {
+        font-size: clamp(2rem, 6vw, 3.25rem);
+        background: linear-gradient(90deg, #2f7d4f, #3b4bc8);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+      /* Intentional, for Impeccable's test drive: low-contrast text, light grey on the page background. */
+      .note { color: #c9c9c4; }
+      /* Intentional, for Impeccable's test drive: a layout property in a transition. */
+      .bar { height: 0.5rem; width: 30%; background: var(--accent); border-radius: 0.25rem; transition: width 0.3s; }
+      .bar:hover { width: 100%; }
+      /* Intentional, for Impeccable's test drive: body text flush with the viewport edges, no background. */
+      .edge { margin: 0; padding: 0; max-width: none; line-height: 1.6; }
+    </style>
+  </head>
+  <body>
+    <header>
+      <span class="mark">Larch</span>
+      <a href="/">Back to the front door</a>
+    </header>
+    <section>
+      <h1>How Larch works</h1>
+      <p>Larch keeps one shared list in view, so everyone starts the day from the same page.</p>
+      <p class="note">Updates arrive on their own, so there is nothing to refresh.</p>
+      <div class="bar" aria-hidden="true"></div>
+    </section>
+    <p class="edge">Each time you open Larch it reads the latest five items from the shared list and shows them in order.</p>
+    <footer>Larch</footer>
+  </body>
+</html>
