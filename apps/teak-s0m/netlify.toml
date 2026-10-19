@@ -3,3 +3,4 @@
 [build]
   command = "npm run build"
   publish = "dist"
+# Built on Netlify Pro, 2026-10-19.
